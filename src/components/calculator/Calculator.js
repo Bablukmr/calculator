@@ -14,12 +14,8 @@ export default function Calculator() {
   }
 
   function handleEquals() {
-    try {
-      const result = math.evaluate(value);
-      setValue(result.toString());
-    } catch (error) {
-      setValue("Error");
-    }
+    const result = math.evaluate(value);
+    setValue(result.toString());
   }
 
   return (
